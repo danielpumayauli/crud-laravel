@@ -24,7 +24,7 @@
 					</strong>
 					{{$product->short}}
 				</td>
-				<td>Ver</td>
+				<td><a href="{{route('products.show', [$product->id])}}">Ver</a></td>
 				<td>editar</td>
 				<td>borrar</td>
 			</tr>
