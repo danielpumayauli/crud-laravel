@@ -12,7 +12,7 @@
 	</p>
 </div>
 <div class="col-sm-4">
-	mensaje
+	@include('products.fragments.aside')
 </div>
 
 @endsection

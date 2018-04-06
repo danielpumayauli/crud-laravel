@@ -6,6 +6,7 @@
 	<h2>Listado de Productos
 	<a href="{{route('products.create')}}" class="btn btn-primary pull-right">Agregar Nuevo</a>
 	</h2>
+	@include('products.fragments.info')
 	<table class="table table-hover table-striped">
 		<thead>
 			<tr>
@@ -40,7 +41,7 @@
 	{{$products->links()}}
 </div>
 <div class="col-sm-4">
-	hola mundo
+	@include('products.fragments.aside')
 </div>
 
 @endsection
