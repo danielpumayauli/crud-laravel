@@ -12,6 +12,13 @@ class ProductController extends Controller
     	// return view('products.index')->with(compact('products'));
     	return view('products.index', compact('products'));
     }
+    public function create(){
+    	return view('products.create');
+    }
+    public function edit($id){
+    	$product = Product::find($id);
+    	return view('products.edit', compact('product'));
+    }
     public function show($id){
     	$product = Product::find($id);
     	return view('products.show', compact('product'));
